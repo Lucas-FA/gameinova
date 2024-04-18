@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Handjet';
+    src: url(fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(fonts/Lato-Bold.ttf);
+}
+
+:root {
+    --azul-gameinova: #5141D1;
+    --azul-escuro-gameinova: #342985;
+    --azul-maisescuro-gameinova: #271F63;
+    --laranja-gameinova: #F7A578;
+    --laranja-escuro-gameinova: #F47E3E;
+    --amarelo-gameinova: #FFE882;
+    --branco-gameinova: #FDF7FA;
+    --preto-gameinova: #242325;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    height: 165px;
+    background-color: var(--azul-maisescuro-gameinova);
+}
+
+header div.container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 167px;
+    height: 139px;
+}
+
+.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: var(--branco-gameinova);
+    font-size: 42px;
+    font-family: 'Handjet';
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    
+    transition: text-decoration 1000ms ease;
+}
+
+.menu a:hover {
+    color: var(--laranja-escuro-gameinova);
+    text-decoration-color: var(--laranja-escuro-gameinova);
+}
