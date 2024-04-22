@@ -259,9 +259,55 @@ h3 {
 }
 
 #portfolio {
-    height: 500px;
+    height: 280px;
+    padding: 35px;
+    margin-bottom: 35px;
 }
 
 #portfolio.container-grid {
-    background-image: linear-gradient(90deg, rgba(81,65,209,1) 0%, rgba(81,65,209,0.6) 100%), url(https://unsplash.it/500/400);
+    background-color: var(--azul-gameinova);
+    background-image: linear-gradient(90deg, rgba(81,65,209,0.6) 0%, rgba(81,65,209,0.6) 100%), url(https://unsplash.it/500/400);
+    background-repeat: no-repeat;
+    background-size: 45% 100%;
+    background-position: 100% 0;
+}
+
+.conteudo-portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-portfolio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portfolio h2 {
+    width: 100%;
+}
+
+#portfolio p {
+    width: 100%;
+    padding: 5%;
+    background-color: var(--azul-escuro-gameinova);
+    font-family: 'Lato Regular';
+    font-size: 17px;
+    color: var(--branco-gameinova);
+}
+
+#portfolio button {
+    width: 20%;
+    height: 35px;
+    background-color: var(--laranja-gameinova);
+    border: none;
+    border-radius: 20px;
+    color: var(--preto-gameinova);
+    font-family: 'Lato Bold';
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 500ms;
 }
