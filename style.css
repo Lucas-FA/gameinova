@@ -4,8 +4,18 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato Regular';
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Bold';
     src: url(fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url(fonts/Lato-Light.ttf);
 }
 
 :root {
@@ -68,7 +78,6 @@ header img {
     font-family: 'Handjet';
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
-    
     transition: text-decoration 1000ms ease;
 }
 
@@ -92,7 +101,7 @@ header img {
 
 .conteudo-banner p {
     color: var(--branco-gameinova);
-    font-family: 'Lato';
+    font-family: 'Lato Bold';
     font-size: 42px;
     text-align: center;
 }
@@ -110,9 +119,11 @@ header img {
     margin-bottom: 35px;
 }
 
-#sobre-nos.container-grid {
-    background-color: #5141D1;
+#sobre-nos.container-grid,
+#solucoes.container-grid {
+    background-color: var(--azul-gameinova);
 }
+
 
 h2 {
     font-family: 'Handjet';
@@ -137,7 +148,7 @@ h2 {
 }
 
 .conteudo-sobre p {
-    font-family: 'Lato';
+    font-family: 'Lato Regular';
     font-size: 20px;
     color: var(--branco-gameinova);
     padding-top: 5%;
@@ -148,4 +159,109 @@ h2 {
 #sobre-nos img {
     width: 45%;
     border-radius: 25px;
+}
+
+#solucoes {
+    height: 670px;
+    padding: 35px;
+    margin-bottom: 35px;
+}
+
+.conteudo-solucoes {
+    background-color: var(--azul-escuro-gameinova);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-pesquisa {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.campo-pesquisa label {
+    font-family: 'Lato Regular';
+    font-size: 20px;
+    color: var(--branco-gameinova);
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.campo-pesquisa select {
+    font-family: 'Lato Regular';
+    font-size: 20px;
+    width: 500px;
+    color: var(--preto-gameinova);
+    background-color: var(--branco-gameinova);
+    cursor: pointer;
+}
+
+.campo-pesquisa select:focus {
+    outline: 2px solid var(--laranja-gameinova);
+}
+
+.container-cards {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    height: 430px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul-maisescuro-gameinova); /* Chamando variável */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.card img {
+    height: 40%;
+    width: 100%;
+    border-radius: 15px 15px 0 0; 
+}
+
+h3 {
+    font-family: 'Lato Bold';
+    font-size: 20px;
+    text-align: center;
+    color: var(--branco-gameinova);
+}
+
+.card p {
+    font-family: 'Lato Regular';
+    font-size: 17px;
+    color: var(--branco-gameinova);
+    padding: 5%;
+}
+
+.card button {
+    width: 80%;
+    height: 35px;
+    background-color: var(--laranja-gameinova);
+    border: none;
+    border-radius: 20px;
+    color: var(--preto-gameinova);
+    font-family: 'Lato Bold';
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+.card button:hover {
+    background-color: var(--laranja-escuro-gameinova);
+}
+
+#portfolio {
+    height: 500px;
+}
+
+#portfolio.container-grid {
+    background-image: linear-gradient(90deg, rgba(81,65,209,1) 0%, rgba(81,65,209,0.6) 100%), url(https://unsplash.it/500/400);
 }
