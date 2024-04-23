@@ -254,12 +254,12 @@ h3 {
     transition: background-color 500ms;
 }
 
-.card button:hover {
+.card button:hover, #portfolio button:hover {
     background-color: var(--laranja-escuro-gameinova);
 }
 
 #portfolio {
-    height: 280px;
+    height: 270px;
     padding: 35px;
     margin-bottom: 35px;
 }
@@ -280,10 +280,9 @@ h3 {
 }
 
 .texto-portfolio {
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #portfolio h2 {
@@ -294,13 +293,21 @@ h3 {
     width: 100%;
     padding: 5%;
     background-color: var(--azul-escuro-gameinova);
+    border-radius: 0 0 25px 25px;
     font-family: 'Lato Regular';
     font-size: 17px;
     color: var(--branco-gameinova);
 }
 
+.botao-portfolio {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+}
+
 #portfolio button {
-    width: 20%;
+    width: 30%;
     height: 35px;
     background-color: var(--laranja-gameinova);
     border: none;
@@ -311,3 +318,4 @@ h3 {
     cursor: pointer;
     transition: background-color 500ms;
 }
+
