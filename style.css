@@ -423,3 +423,74 @@ h3 {
     cursor: pointer;
     transition: background-color 500ms;
 }
+
+footer {
+    height: 400px;
+    background-color: var(--azul-maisescuro-gameinova);
+}
+
+footer h2 {
+    background-color: unset;
+    color: var(--branco-gameinova);
+    font-weight: 500;
+}
+
+footer .container-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.grupo-um, .grupo-dois {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.grupo-um p, .grupo-dois p {
+    color: var(--branco-gameinova);
+    font-family: 'Lato Regular';
+    font-size: 17px;
+    text-align: center;
+}
+
+.outros-contatos, .contato-fundadores {
+    width: 45%;
+}
+
+.icones-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icones-redes a {
+    color: var(--laranja-gameinova);
+}
+
+.icones-redes a:hover {
+    color: var(--laranja-escuro-gameinova);
+}
+
+.contato-fundadores p {
+    margin-bottom: 10px;
+}
+
+.logo-ano {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes-empresa {
+    width: 45%;
+}
+
+.logo-ano img {
+    height: 45px;
+    width: 55px;
+}
