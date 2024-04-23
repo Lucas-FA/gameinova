@@ -494,3 +494,8 @@ footer .container-grid {
     height: 45px;
     width: 55px;
 }
+
+.funcoes button {
+    color: var(--preto-gameinova);
+    background-color: var(--laranja-gameinova);
+}
