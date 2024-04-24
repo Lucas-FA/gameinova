@@ -43,6 +43,39 @@ body {
     background-color: var(--azul-escuro-gameinova);
 }
 
+.funcoes {
+    margin-top: 20vh;
+    width: 70px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.funcoes button {
+    height: 50px;
+    width: 50px;
+    color: var(--preto-gameinova);
+    background-color: var(--laranja-gameinova);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+.funcoes svg {
+    height: 40px;
+    width: 40px;
+}
+
+.funcoes button:hover {
+    background-color: var(--laranja-escuro-gameinova);
+}
+
 .container-grid {
     width: 80%;
     max-width: 1920px;
@@ -51,7 +84,12 @@ body {
 
 header {
     height: 165px;
+    width: 100%;
     background-color: var(--azul-maisescuro-gameinova);
+}
+
+header button {
+    display: none;
 }
 
 header div.container-grid {
@@ -157,8 +195,13 @@ h2 {
     padding-right: 5%;
 }
 
-#sobre-nos img {
+.imagem-fachada {
     width: 45%;
+}
+
+#sobre-nos img {
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
 }
 
@@ -173,6 +216,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .campo-pesquisa {
@@ -277,6 +322,7 @@ h3 {
 }
 
 .conteudo-portfolio {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -285,6 +331,7 @@ h3 {
 
 .texto-portfolio {
     width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -293,8 +340,9 @@ h3 {
     width: 100%;
 }
 
-#portfolio p {
+.texto-portfolio p {
     width: 100%;
+    height: 100%;
     padding: 5%;
     background-color: var(--azul-escuro-gameinova);
     border-radius: 0 0 25px 25px;
@@ -495,7 +543,532 @@ footer .container-grid {
     width: 55px;
 }
 
-.funcoes button {
-    color: var(--preto-gameinova);
-    background-color: var(--laranja-gameinova);
+@media screen and (max-width: 1250px) {
+    .menu {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 32px;
+        padding: 14px;
+    }
+
+    #sobre-nos {
+        height: 500px;
+    }
+    
+    .conteudo-sobre p {
+        font-size: 17px;
+    }
+
+    #solucoes {
+        height: 655px;
+    }
+    
+    .campo-pesquisa {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+    }
+    
+    .campo-pesquisa label {
+        width: 40%;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-right: unset;
+    }
+    
+    .campo-pesquisa select {
+        font-size: 18px;
+        width: 40%;
+        margin-bottom: 15px;
+    }
+    
+    .card {
+        height: 370px;
+        width: 200px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+    
+    .card button {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .texto-contato {
+        width: 47%;
+    }
+    
+    .texto-contato p {
+        width: 100%;
+        height: 88%;
+    }
+    
+    #contato form {
+        width: 47%;
+    }
+
+    .icones-redes svg {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    header button {
+        width: 50px;
+        display: unset;
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        fill: var(--branco-gameinova);
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+        padding: 0px 30px;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000000f0;
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        height: 140px;
+    }
+    
+    header img {
+        width: 127px;
+        height: 99px;
+    }
+
+    .texto-portfolio {
+        width: 47%;
+        height: 100%;
+    }
+    
+    .botao-portfolio {
+        width: 47%;
+        padding-left: 10%;
+    }
+
+    #portfolio button {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #solucoes {
+        height: 1080px;
+    }
+    
+    .conteudo-banner p {
+        font-size: 32px;
+    }
+
+    .conteudo-sobre p,
+    .texto-portfolio p,
+    .texto-contato p {
+        font-size: 15px;
+    }
+
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: 400px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+    }
+
+    #portfolio.container-grid {
+        background-size: 47% 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    #sobre-nos {
+        height: 600px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 25px;
+        margin-bottom: 25px;
+        align-items: center;
+    }
+
+    .conteudo-sobre {
+        width: 100%;
+        height: 100%;
+        border-radius: unset;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .conteudo-sobre p {
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .imagem-fachada {
+        width: 100%;
+        height: 50%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background-color: var(--azul-escuro-gameinova);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    #solucoes,
+    #portfolio {
+        padding: 25px;
+        height: auto;
+    }
+
+    .conteudo-solucoes {
+        padding: 25px;
+    }
+
+    .botao-portfolio {
+        width: 47%;
+        padding-left: 5%;
+    }
+
+    #portfolio button {
+        width: 50%;
+    }
+
+    #contato {
+        height: auto;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .texto-contato {
+        width: 100%;
+    }
+
+    .texto-contato p {
+        padding: 20px;
+        height: auto;
+        border-radius: unset;
+    }
+
+    #contato form {
+        width: 100%;
+        border-radius: unset;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    #contato form label {
+        margin-bottom: 9px;
+        font-size: 15px;
+    }
+    
+    .campo {
+        margin-bottom: 13px;
+    }
+    
+    .campo-textarea {
+        margin-bottom: 13px;
+    }
+    
+    .campo input {
+        height: 25px;
+        font-size: 15px;
+    }
+    
+    .campo-textarea textarea {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card {
+        flex-basis: 45%;
+    }
+    
+    .campo-pesquisa label {
+        width: 60%;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .campo-pesquisa select {
+        font-size: 15px;
+        width: 50%;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 100px;
+    }
+    
+    header img {
+        width: 107px;
+        height: 79px;
+    }
+    
+    footer {
+        height: unset;
+    }
+
+    .grupo-um, .grupo-dois {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer {
+        height: 450px;
+        background-color: var(--azul-maisescuro-gameinova);
+    }
+    
+    footer h2 {
+        font-size: 26px;
+    }
+    
+    .grupo-um p, .grupo-dois p {
+        font-size: 15px;
+    }
+    
+    .outros-contatos, .contato-fundadores {
+        width: 100%;
+    }
+    
+    .icones-redes {
+        width: 100%;
+        padding-right: 30%;
+        padding-left: 30%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .icones-redes svg {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .contato-fundadores p {
+        margin-bottom: 10px;
+    }
+    
+    .logo-ano {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .informacoes-empresa {
+        width: 100%;
+    }
+
+    .informacoes-empresa p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .conteudo-banner p {
+        font-size: 22px;
+    }
+
+    .imagem-fachada {
+        height: 45%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #cases.container-grid {
+        width: 100%;
+        margin: unset;
+    }
+
+    .container-cards {
+        flex-wrap: nowrap;
+        gap: 40px;
+        overflow-x: auto;
+    }
+
+    .card {
+        height: 400px;
+        width: 280px;
+        flex-basis: unset;
+    }
+
+    .card:first-child {
+        margin-left: 30px;
+    }
+
+    .card:last-child {
+        margin-right: 30px;
+    }
+
+    #portfolio {
+        height: 400px;
+    }
+    
+    #portfolio.container-grid {
+        background-size: 50% 50%;
+        background-position: 50% 100%;
+    }
+    
+    .conteudo-portfolio {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .texto-portfolio {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .texto-portfolio p {
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .botao-portfolio {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 10%;
+    }
+    
+    #portfolio button {
+        width: 30%;
+    }
+
+    .icones-redes {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    header {
+        height: 80px;
+    }
+    
+    header img {
+        width: 97px;
+        height: 69px;
+    }
+    
+    .imagem-fachada {
+        height: 40%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    .campo-pesquisa label {
+        width: 80%;
+    }
+    
+    .campo-pesquisa select {
+        width: 60%;
+    }
+
+    .card {
+        height: 380px;
+        width: 240px;
+        flex-basis: unset;
+    }
+
+    #portfolio.container-grid {
+        background-size: 65% 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .imagem-fachada {
+        height: 35%;
+    }
+
+    .botao-portfolio {
+        padding-top: 15%;
+    }
+
+    .icones-redes {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #sobre-nos,
+    #solucoes,
+    #portfolio,
+    #contato {
+        padding: 15px;
+    }
+    
+    .conteudo-sobre p {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 380px;
+        width: 210px;
+    }
+
+    .card:first-child {
+        margin-left: 15px;
+    }
+
+    .card:last-child {
+        margin-right: 15px;
+    }
+
+    #portfolio.container-grid {
+        background-size: 85% 50%;
+    }
+
+    #portfolio button {
+        width: 40%;
+    }
 }
