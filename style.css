@@ -139,7 +139,7 @@ header img {
 
 .banner {
     height: 500px;
-    background-image: linear-gradient(90deg, rgba(81,65,209,1) 0%, rgba(81,65,209,0.6) 100%), url(img/cidade-banner-naofinalizado.png);
+    background-image: linear-gradient(90deg, rgba(81,65,209,1) 0%, rgba(81,65,209,0.6) 100%), url(img/cidade-banner.png);
     background-position: 100% 0%;
     margin-bottom: 35px;
 }
