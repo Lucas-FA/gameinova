@@ -219,7 +219,7 @@ h2 {
 }
 
 #solucoes {
-    height: 670px;
+    height: 720px;
     padding: 35px;
     margin-bottom: 35px;
 }
@@ -265,9 +265,28 @@ h2 {
 }
 
 .container-cards {
-    width: 90%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
+}
+
+.container-cards button {
+    width: 3%;
+}
+
+#botao-anterior, #botao-proximo {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--laranja-gameinova);
+}
+
+#botao-anterior svg, #botao-proximo svg {
+    color: var(--laranja-gameinova);
+}
+
+#botao-anterior svg:hover, #botao-proximo svg:hover {
+    color: var(--laranja-escuro-gameinova);
 }
 
 .card {
@@ -318,6 +337,31 @@ h3 {
 
 .card button:hover, #portfolio button:hover, #contato form button:hover {
     background-color: var(--laranja-escuro-gameinova);
+}
+
+.botoes-carrossel {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes-carrossel button {
+    width: 5%;
+    height: 40px;
+    background: none;
+    border: none;
+    color: var(--laranja-gameinova);
+}
+
+.botoes-carrossel svg {
+    width: 35px;
+}
+
+.botoes-carrossel svg:hover {
+    color: var(--laranja-escuro-gameinova);
 }
 
 #portfolio {

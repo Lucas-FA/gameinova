@@ -97,6 +97,10 @@
                 </div>
 
                 <div class="container-cards">
+                    <button onclick="mostrarCasesAnteriores()" id="botao-anterior">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" fill="currentColor"/></svg>
+                    </button>
+                    
                     <div class="card">
                         <img src="img/escola-sao-rafael.png" alt="Imagem da Escola São Rafael">
                         <h3>Escola São Rafael</h3>
@@ -131,6 +135,19 @@
                         <p>A garagem estava procurando uma forma de se destacar em relação a seus concorrentes, para isso, criamos um sistema de recompensa onde o  tempo total que um carro...</p>
                         <button>Ler mais</button>
                     </div> -->
+
+                    <button onclick="mostrarProximosCases()" id="botao-proximo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+
+                <div class="botoes-carrossel">
+                    <button onclick="selecionarCases(0)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" fill="currentColor"/></svg>
+                    </button>
+                    <button onclick="selecionarCases(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" fill="currentColor"/></svg>
+                    </button>
                 </div>
             </div>
         </section>

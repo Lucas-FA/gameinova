@@ -52,3 +52,49 @@ const entrarEmContato = (event) => {
     event.preventDefault();
 }
 
+let listaCases = [
+    "cases-zero",
+    "cases-um"
+]
+
+let casesAtuais = 0;
+
+let numeroCases = listaCases.length;
+
+let solucoes = document.querySelector(".container-cards");
+
+solucoes.classList.add(listaCases[casesAtuais]);
+
+const mostrarCasesAnteriores = () => {
+    //Remove o slide anterior
+    solucoes.classList.remove(listaCases[casesAtuais]);
+    if(casesAtuais > 0) {
+        casesAtuais--;
+    } 
+    else {
+        casesAtuais = numeroCases - 1;
+    }
+    //Renderiza o slideAtual
+    solucoes.classList.add(listaCases[casesAtuais]);
+}
+
+const mostrarProximosCases = () => {
+    //Remove o slide anterior
+    solucoes.classList.remove(listaCases[casesAtuais]);
+    //Muda a posição da lista de slides, para mostrar o slideAtual
+    if(casesAtuais < numeroCases - 1) {
+        casesAtuais++;
+    } 
+    else {
+        casesAtuais = 0;
+    }
+    //Renderiza o slideAtual
+    solucoes.classList.add(listaCases[casesAtuais]);
+}
+
+const selecionarCases = (indiceCases) => {
+    //p/ cada item do array (remove o item da classe do banner)
+    listaCases.forEach(conjunto => solucoes.classList.remove(conjunto));
+    casesAtuais = indiceCases;
+    solucoes.classList.add(listaCases[indiceCases]);
+}
