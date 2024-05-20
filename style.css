@@ -556,6 +556,14 @@ footer .container-grid {
     width: 55px;
 }
 
+.menu-fechado {
+    display: none;
+}
+
+#icone-x {
+    display: none;
+}
+
 @media screen and (max-width: 1250px) {
     .menu {
         width: 700px;
@@ -658,7 +666,7 @@ footer .container-grid {
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-        background-color: #000000f0;
+        background-color: #271F63f0;
         position: absolute;
         top: 165px;
         right: 0px;
@@ -673,6 +681,10 @@ footer .container-grid {
     header img {
         width: 127px;
         height: 99px;
+    }
+
+    nav.menu {
+        top: 140px;
     }
 
     .texto-portfolio {
@@ -860,6 +872,10 @@ footer .container-grid {
         width: 107px;
         height: 79px;
     }
+
+    nav.menu {
+        top: 100px;
+    }
     
     footer {
         height: unset;
@@ -1014,6 +1030,10 @@ footer .container-grid {
     header img {
         width: 97px;
         height: 69px;
+    }
+
+    nav.menu {
+        top: 80px;
     }
     
     .imagem-fachada {

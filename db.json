@@ -1,0 +1,47 @@
+{
+  "solicitacoes": [
+    {
+      "id": "44a2",
+      "nome": "Byorks",
+      "email": "byorks@email.com",
+      "assunto": "Preciso fidelizar a clientela porque tem outro CEO fazendo sucesso."
+    }
+  ],
+  "cases": [
+    {
+      "imagem": "img/escola-sao-rafael.png",
+      "alt": "Imagem da Escola São Rafael",
+      "titulo": "Escola São Rafael",
+      "descricao": "A escola São Rafael estava com um grande problema de desperdício, para solucionar esse caso nossa empresa aplicou conceitos de gamificação no refeitório da escola, concedendo...",
+      "id": "0"
+    },
+    {
+      "imagem": "img/mercado-nitsch.png",
+      "alt": "Imagem do Mercado Nitsch",
+      "titulo": "Mercado Nitsch",
+      "descricao": "O mercado Nitsch queria encontrar uma forma de transformar as compras feitas pelos clientes em algo mais recompensador. A empresa de gamificação sugeriu um sistema...",
+      "id": "1"
+    },
+    {
+      "imagem": "img/restaurante-byorks.png",
+      "alt": "Imagem do Restaurante Byorks",
+      "titulo": "Restaurante Byorks",
+      "descricao": "O restaurante estava sofrendo com a falta de clientes por estar em um local competitivo, para ajudar o restaurante, a empresa de gamificação criou um sistema...",
+      "id": "2"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=62",
+      "alt": "Imagem da Biblioteca Angelini",
+      "titulo": "Biblioteca Angelini",
+      "descricao": "A biblioteca enfrentava problemas com a alta taxa de atraso na devolução de livros, para ajudar, criamos um sistemas de recompensas que premiava quem devolvia...",
+      "id": "3"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=62",
+      "alt": "Imagem da Garagem Oliveira",
+      "titulo": "Garagem Oliveira",
+      "descricao": "A garagem estava procurando uma forma de se destacar em relação a seus concorrentes, para isso, criamos um sistema de recompensa onde o  tempo total que um carro...",
+      "id": "4"
+    }
+  ]
+}
