@@ -270,6 +270,12 @@ h2 {
     justify-content: space-between;
 }
 
+#lista-cards {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .container-cards button {
     width: 3%;
 }

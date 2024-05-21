@@ -42,6 +42,13 @@
       "titulo": "Garagem Oliveira",
       "descricao": "A garagem estava procurando uma forma de se destacar em relação a seus concorrentes, para isso, criamos um sistema de recompensa onde o  tempo total que um carro...",
       "id": "4"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=62",
+      "alt": "Imagem da Garagem Oliveira 2",
+      "titulo": "Garagem Oliveira",
+      "descricao": "A garagem estava procurando uma forma de se destacar em relação a seus concorrentes, para isso, criamos um sistema de recompensa onde o  tempo total que um carro...",
+      "id": "5"
     }
   ]
 }

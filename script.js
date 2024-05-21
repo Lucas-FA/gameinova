@@ -76,6 +76,7 @@ const mostrarCasesAnteriores = () => {
     }
     //Renderiza o slideAtual
     solucoes.classList.add(listaCases[casesAtuais]);
+    trocarConjuntoCases(casesAtuais);
 }
 
 const mostrarProximosCases = () => {
@@ -90,6 +91,7 @@ const mostrarProximosCases = () => {
     }
     //Renderiza o slideAtual
     solucoes.classList.add(listaCases[casesAtuais]);
+    trocarConjuntoCases(casesAtuais);
 }
 
 const selecionarCases = (indiceCases) => {
@@ -97,4 +99,61 @@ const selecionarCases = (indiceCases) => {
     listaCases.forEach(conjunto => solucoes.classList.remove(conjunto));
     casesAtuais = indiceCases;
     solucoes.classList.add(listaCases[indiceCases]);
+    trocarConjuntoCases(indiceCases);
+}
+
+let listaCasesBD = [];
+
+const carregarCases = () => {
+    // Método HTTP GET - Read -> Leitura
+    fetch("http://localhost:3000/cases")
+    .then((resposta) => resposta.json())
+    .then((dados) => {
+        listaCasesBD = dados;
+        trocarConjuntoCases(0);
+    })
+    .catch( erro => console.error(erro))
+}
+
+//essa função muda o conjunto de cases de acordo com o 0 ou 1 do indice
+const trocarConjuntoCases = (indice) => {
+    let conjuntoCases = document.getElementById("lista-cards");
+
+    //Template Strings com cases de 0 a 2
+    let template = ""
+    //Template Strings com cases de 3 a 5
+    let template1 = ""
+
+    //pega todos os cases do db.json
+    for(let i = 0; i < listaCasesBD.length; i++) {
+        //recebe um case por vez
+        let cardCase = listaCasesBD[i];
+
+        //verifica se o i é menor que metade do número total de cases, no caso 3, e coloca os cases de 0 a 2 no template
+        if (i < listaCasesBD.length / 2) {
+            template += `<div class="card">
+                <img src="${cardCase.imagem}" alt="${cardCase.alt}">
+                <h3>${cardCase.titulo}</h3>
+                <p>${cardCase.descricao}</p>
+                <button>Ver mais</button>
+            </div>`
+        }
+        //se o i é maior que metade do número total de cases, no caso 3, coloca os cases de 3 a 5 no template1
+        else {
+            template1 += `<div class="card">
+                <img src="${cardCase.imagem}" alt="${cardCase.alt}">
+                <h3>${cardCase.titulo}</h3>
+                <p>${cardCase.descricao}</p>
+                <button>Ver mais</button>
+            </div>`
+        }
+    }
+
+    //verifica o número do índice e coloca o template adequado
+    if(indice == 0) {
+        conjuntoCases.innerHTML = template;
+    }
+    else {
+        conjuntoCases.innerHTML = template1;
+    }
 }
