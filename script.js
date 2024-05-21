@@ -157,3 +157,19 @@ const trocarConjuntoCases = (indice) => {
         conjuntoCases.innerHTML = template1;
     }
 }
+
+let musicaTocando = false;
+const audio = new Audio('music/Peyruis - Swing (original mix).wav');
+audio.volume = 0.2;
+audio.loop = true;
+
+const tocarMusica = () => {
+    if (musicaTocando == false) {
+        audio.play();
+        musicaTocando = true;
+    }
+    else {
+        audio.pause();
+        musicaTocando = false;
+    }
+}
